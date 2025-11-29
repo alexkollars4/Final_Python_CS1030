@@ -8,9 +8,9 @@ questions = [
     }, 
 ]
 
-#Function for operating the quiz
+#Function for displaying the quiz
 def display_quiz(question):
-    print(question['question'])
+    print(question["question"])
     for i, option in enumerate(question['options'], 1):
         print(f"{i}. {option}")
 
@@ -37,17 +37,17 @@ def run_quiz():
         display_quiz(question)
         user_choice = get_user_answer()
 
-        if question['options'][user_choice] == question['correct_answer']:
-            print("Correct!\n")
+        if question["options"][user_choice] == question['answer']:
+            print("Correct!")
             score += 1
         else:
-            print(f"Wrong! The correct answer is: {question['correct_answer']}\n")
+            print(f"Wrong! The correct answer is: {question['answer']}\n")
 
         print()
 
-        print(f"Quiz Over! Your final score is {score} out of {total_questions}.")
-        percentage = (score / total_questions) * 100
-        print(f"That's {percentage:.2f}% correct.")
+    print(f"Quiz Over! Your final score is {score} out of {total_questions}.")
+    percentage = (score / total_questions) * 100
+    print(f"That's {percentage:.2f}% correct.")
 
 #Main Game Loop
 def main():
