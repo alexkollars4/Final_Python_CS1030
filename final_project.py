@@ -56,6 +56,8 @@ def run_quiz():
     
     random.shuffle(questions)
 
+#This logic goes through each question and checks if the user entered answer is correct.
+#If you get it right, it increases your score and wrong you get shown the correct answer.
     for question in questions:
         display_quiz(question)
         user_choice = get_user_answer()
