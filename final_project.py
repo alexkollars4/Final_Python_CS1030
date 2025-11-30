@@ -66,7 +66,7 @@ def run_quiz():
             print("Correct!")
             score += 1
         else:
-            print(f"Wrong! The correct answer is: {question['answer']}\n")
+            print(f"Sorry, that is incorrect. The correct answer is: {question['answer']}\n")
             print()
 
         print()
