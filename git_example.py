@@ -10,3 +10,5 @@ def generate_password(length=12):
 if __name__ == "__main__":
     pwd = generate_password(16)
     print(f"Generated password: {pwd}")
+
+    Neew lines
