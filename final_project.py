@@ -8,9 +8,6 @@ questions = [
         'answer': '2x'
     },
     
-    
-    
-    
     # Power Rule Derivatives
     {
         "question": "What is the derivative of x³?",
